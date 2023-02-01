@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 실습</title>
+<link rel="stylesheet" href="resources/css/joinTask.css">
+</head>
+<body>
+	<div class="join-main">
+		<div class="join-title">
+			<h3>이메일 간편가입</h3>
+		</div>
+		<div>
+			<form action="">
+				<div class="email">
+					<p class="input-titles">이메일</p>
+					<div class="input-text email-input">
+						<div class="email-input-text input-text">
+							<input type="text" placeholder="이메일 계정">
+						</div>
+						<button class="emailVarify">
+							<span>인증하기</span>
+						</button>
+					</div>
+				</div>
+				<div class="name">
+					<p class="input-titles">이름</p>
+					<div class="input-text">
+						<input type="text" placeholder="이름 입력">
+						<p class="warning-text">이름을 입력해주세요.</p>
+					</div>
+				</div>
+				<div class="password">
+					<p class="input-titles">비밀번호</p>
+					<div class="input-text pw">
+						<input type="password" placeholder="비밀번호 입력">
+						<p class="warning-text">비밀번호를 입력해주세요.</p>
+					</div>
+				</div>
+				<div class="password">
+					<div class="input-text pwVarify">
+						<input type="password" placeholder="비밀번호 확인">
+						<p class="warning-text">비밀번호가 일치하지 않습니다.</p>
+					</div>
+				</div>
+				<div class="agreement">
+					<label>
+						<input type="checkbox" id="agreement">
+					</label>
+					<label for="agreement">
+						<p id="agree-all-text">전체동의</p>
+						<p id="agree-condition-text">회원·서비스(필수), 투자 서비스 (선택), 스타트업찾기 서비스 (선택), 이벤트·혜택알림 동의(선택), 만 14세 이상(필수)</p>
+					</label>
+				</div>
+				<div class="submit">
+					<button>
+						<span>입력</span>
+					</button>
+				</div>
+			</form>
+		</div>
+		<p class="ifLogin input-titles">
+			이미 와디즈 계정이 있나요?
+			<a href="/web/waccount/wAccountLogin">로그인</a> 
+		</p>
+	</div>
+</body>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="resources/js/joinTask.js"></script>
+</html>

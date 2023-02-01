@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="star.png">
+<title>테이블 병합 실습</title>
+</head>
+<style>
+	table {
+		width: 30%;
+		border: 1px solid black;
+		text-align: center;
+		border-collapse: collapse;
+		margin: 0 auto;
+	}
+	
+	th, td {
+		border: 1px solid black;
+	}
+	
+</style>
+<body>
+	<table>
+		<tr>
+			<th colspan="2" style="background-color: red;">1</th>
+			<th style="background-color: orange;">3</th>
+		</tr>
+		<tr>
+			<th style="background-color: green;">4</th>
+			<th style="background-color: red;">5</th>
+			<th rowspan="2" style="background-color: yellow;">6</th>
+		</tr>
+		<tr>
+			<th style="background-color: blue;">7</th>
+			<th style="background-color: magenta;">8</th>
+		</tr>
+	</table>
+</body>
+</html>

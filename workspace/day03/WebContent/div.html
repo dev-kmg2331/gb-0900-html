@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>div</title>
+</head>
+<style>
+	.inline {
+		display: inline-block;
+		width: 25%;
+	}
+</style>
+<body>
+	<!-- inline, inline-block 요소를 사용할 때에는 엔터도 공백으로 인식한다. -->
+	<!-- 만약 가독성 목적으로 엔터를 친다면, inline 요소인 지 잘 확인해야 한다. -->
+	<div style="width: 100%	">
+		<div style="display: inline-block; background: red; width: 50%;">DIV1</div><div style="display: inline-block; background: green; width: 50%; overflow: visible;">DIV2</div>
+	</div>
+	<!-- 4개의 div 태그를 생성하고, 한 줄로 이어서 나오게 하기 -->
+	<div>
+		<div class="inline" style="background: yellow; float: left;">4</div>
+		<div class="inline" style="background: orange; float: left;">5</div>
+		<div class="inline" style="background: blue; float: left;">6</div>
+		<div class="inline" style="background: magenta; float: left;">7</div>
+	</div>
+</	body>
+</html>
